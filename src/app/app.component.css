@@ -1,11 +1,15 @@
 .tempbg {
   display: flex;
   align-items: center;
-
-  background-image: url("https://images.unsplash.com/photo-1517103068540-6a70e8c0022f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ad606ba9c499a4cad9d45b54a0ba59e7&auto=format&fit=crop&w=2702&q=80");
+/* 
+  background-image: url(""); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 
+}
+
+.back{
+  background-color: #C6DABF;
 }

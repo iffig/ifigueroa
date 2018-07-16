@@ -1,13 +1,49 @@
 /*Global Style*/
-*{
+* {
   color: #373737;
-  font-family: Trebuchet MS, sans-serif;
+  font-family: Avenir, Helvetica, sans-serif;
 }
 p {
-  font-family: Bakerville, serif;
+  font-family: Didot, Cambria,serif;
+}
+
+div a:link {
+  color: #FAC9B8;
+
+}
+div a:visited {
+  color: #E88873;
+}
+div a:hover{
+  text-shadow: 0.3px 0.3px #DCDCDC;
+  text-decoration: none;
 }
 
 /*ifigueroa main color scheme*/
+.main-txt-white{
+  color:#F4F4F4;
+}
+.main-bg-white{
+  background-color:#F4F4F4;
+}
+.main-txt-black{
+  color:#373737;
+}
+.main-bg-black{
+  background-color:#373737;
+}
+.main-txt-light{
+  color:#FAC9B8;
+}
+.main-bg-light{
+  background-color:#FAC9B8;
+}
 
+.main-txt-dark{
+  color:#E88873;
+}
+.main-bg-dark{
+  background-color:#E88873;
+}
 
 /*figcs color scheme*/
