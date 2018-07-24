@@ -1,4 +1,4 @@
-<div class="card" (mouseout)="hideDetails()" (mouseenter)="showDetails()"  >
+<div class="card" (click)="toggleDetail()"  >
   <img class="card-img" [src]="item.imagePath" alt="Card image">
 
   <div class="card-img-overlay" [hidden]=show>
@@ -12,9 +12,16 @@
       <h2 class="card-title">{{item.name}}</h2>
       <h6>{{item.date}}</h6>
       <p class="card-text">{{item.description}}</p>
-      <button *ngIf=item.codeLink.length type="button" class="btn btn-sm">Code</button>
-      <button *ngIf=item.demoLink.length type="button" class="btn btn-sm">Demo</button>
-      <button *ngIf=item.moreInfo.length type="button" class="btn btn-sm">More Info</button>
+
+      <button *ngIf=item.codeLink.length type="button" class="btn btn-sm">
+        <a href={{item.codeLink}}>Code</a>
+      </button>
+      <button *ngIf=item.demoLink.length type="button" class="btn btn-sm">
+        <a href={{item.demoLink}}>Demo</a>
+      </button>
+      <button *ngIf=item.moreInfo.length type="button" class="btn btn-sm">
+        <a href={{item.moreInfo}}>More Info</a>
+      </button>
     </div>
   </div>
 </div>

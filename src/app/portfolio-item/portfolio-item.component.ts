@@ -1,7 +1,6 @@
 import { Component, OnInit, Input} from '@angular/core';
 import { portfolioItem } from '../portfolio-item';
 
-
 @Component({
   selector: 'app-portfolio-item',
   templateUrl: './portfolio-item.component.html',
@@ -20,6 +19,16 @@ export class PortfolioItemComponent implements OnInit {
 
   showDetails():void{
     this.show = true;
+  }
+
+  toggleDetail():void{
+    if(this.show == false){
+      this.show = true;
+    }
+    else if(this.show == true){
+      this.show = false;
+    }
+
   }
 
 }

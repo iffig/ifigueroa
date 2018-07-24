@@ -16,3 +16,10 @@ img{
   width: 18em;
   height: 18em;
 }
+
+a{
+  color: #f4f4f4;
+}
+a:hover{
+  color: #f4f4f4;
+}

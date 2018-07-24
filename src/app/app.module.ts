@@ -6,17 +6,20 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { AboutComponent } from './about/about.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PortfolioItemComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

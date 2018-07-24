@@ -1,19 +1,7 @@
-.tempbg {
-  display: flex;
-  align-items: center;
-/*
-  background-image: url(""); */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-
-}
-
-.back{
-  background-color: #C6DABF;
-}
-
 li{
   padding:0.5em;
+}
+
+.styled{
+  color: #E88873;
 }
