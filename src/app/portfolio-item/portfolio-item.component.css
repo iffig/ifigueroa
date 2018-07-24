@@ -12,11 +12,14 @@
   background-color: rgba(250,201,184,0.5);
 }
 
-img{
-  width: 18em;
-  height: 18em;
+.card-img {
+  object-fit: cover;
+  height: 100%;
 }
 
+.card-text{
+  color: #f4f4f4
+}
 a{
   color: #f4f4f4;
 }

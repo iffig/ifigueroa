@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ifigueroa';
+  symbolToggled = false;
+
+  toggleSymbol():void{
+    if(this.symbolToggled == false){
+      this.symbolToggled = true;
+    }
+    else{
+      this.symbolToggled = false;
+    }
+  }
 }
