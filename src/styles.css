@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+/*Global Style*/
+* {
+  color: #373737;
+  font-family: Avenir, Helvetica, sans-serif;
+}
+p {
+  font-family: Didot, Cambria,serif;
+}
+
+div a {
+  color: #E88873;
+}
+
+div a:hover{
+  text-decoration: none;
+  color: #58BC82;
+}
+
+.btn{
+  background-color: #E88873;
+  color: #f4f4f4;
+  margin:0.5em;
+}
+
+.btn:hover{
+  background-color: #e26a50;
+}
+
+/*ifigueroa main color scheme*/
+.main-txt-white{
+  color:#F4F4F4;
+}
+.main-bg-white{
+  background-color:#F4F4F4;
+}
+.main-txt-black{
+  color:#373737;
+}
+.main-bg-black{
+  background-color:#373737;
+}
+.main-txt-light{
+  color:#FAC9B8;
+}
+.main-bg-light{
+  background-color:#FAC9B8;
+}
+.main-txt-dark{
+  color:#E88873;
+}
+.main-bg-dark{
+  background-color:#E88873;
+}
+
+/*figcs color scheme*/
