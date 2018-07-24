@@ -1,13 +1,23 @@
-<!-- <div class='container'> -->
-  <app-navigation></app-navigation>
-  <app-home></app-home>
-<!-- </div> -->
+<nav class="navbar navbar-top navbar-toggleable-sm navbar-light">
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarinfo">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarinfo">
+    <a class="navbar-brand" href="#">ifigueroa</a>
 
-<!-- <div class='tempbg'>
-  <div style='text-align:center'>
-    <h1 class='display-1'>Please bear with us.</h1>
-    <h1 class='display-1'>This site is under construction.</h1>
+    <ul class='nav navbar-nav ml-auto text-center'>
+
+      <li class='nav-item'><a routerLink="/home">Home</a></li>
+
+      <li class='nav-item'><a routerLink="/portfolio">Portfolio</a></li>
+
+    </ul>
   </div>
-</div> -->
+
+
+  <!-- the part that gets collapsed when toggled -->
+</nav>
+
+<router-outlet></router-outlet>

@@ -7,16 +7,23 @@ p {
   font-family: Didot, Cambria,serif;
 }
 
-div a:link {
-  color: #FAC9B8;
-
-}
-div a:visited {
+div a {
   color: #E88873;
 }
+
 div a:hover{
-  text-shadow: 0.3px 0.3px #DCDCDC;
   text-decoration: none;
+  color: #58BC82;
+}
+
+.btn{
+  background-color: #E88873;
+  color: #f4f4f4;
+  margin:0.5em;
+}
+
+.btn:hover{
+  background-color: #e26a50;
 }
 
 /*ifigueroa main color scheme*/

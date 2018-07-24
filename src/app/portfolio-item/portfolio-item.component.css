@@ -1,0 +1,18 @@
+.card{
+  width: 18em;
+  height: 18em;
+  margin: 1em;
+}
+.card-img-overlay{
+  width: 18em;
+  height: 18em;
+  word-wrap: break-word;
+}
+.detail-overlay{
+  background-color: rgba(250,201,184,0.5);
+}
+
+img{
+  width: 18em;
+  height: 18em;
+}

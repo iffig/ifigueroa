@@ -1,7 +1,7 @@
 .tempbg {
   display: flex;
   align-items: center;
-/* 
+/*
   background-image: url(""); */
   background-position: center;
   background-repeat: no-repeat;
@@ -12,4 +12,8 @@
 
 .back{
   background-color: #C6DABF;
+}
+
+li{
+  padding:0.5em;
 }

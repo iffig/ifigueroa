@@ -1,0 +1,27 @@
+.card{
+  width: 18em;
+  height: 18em;
+}
+.card-img-overlay{
+  width: 18em;
+  height: 18em;
+  word-wrap: break-word;
+}
+.detail-overlay{
+  background-color: rgba(250,201,184,0.5);
+}
+
+img{
+  width: 18em;
+  height: 18em;
+}
+
+.btn{
+  background-color: #E88873;
+  color: #f4f4f4;
+  margin:0.5em;
+}
+
+.btn:hover{
+  background-color: #e26a50;
+}
