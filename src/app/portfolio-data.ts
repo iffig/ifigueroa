@@ -6,16 +6,19 @@ export const PORTFOLIOITEMS: portfolioItem[] = [
     name: 'Building Recognition - Senior Capstone',
     date: 'Fall 2017 - Spring 2018',
     description: 'description',
+    skills: ['test', 'hello', 'skills', 'these are skills'],
     codeLink: 'https://github.com/trimble-osm-capstone',
     demoLink: '',
     moreInfo: '',
     imagePath: 'https://images.unsplash.com/photo-1521661488642-d86e85a90de2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c7339eec338baac7df606de3d5b21440&auto=format&fit=crop&w=668&q=80'
+
   },
   {
     type: 'cs',
     name: 'Colorado Biking Game',
     date: 'Fall 2016',
     description: 'description',
+    skills: [],
     codeLink: 'https://github.com/iffig/Biking_Game',
     demoLink: '',
     moreInfo: '',
@@ -26,6 +29,7 @@ export const PORTFOLIOITEMS: portfolioItem[] = [
     name: 'Star Traders',
     date: 'Spring 2016',
     description: 'description',
+    skills: ['test', 'hello', 'skills', 'these are skills'],
     codeLink: '',
     demoLink: '',
     moreInfo: '',
@@ -36,9 +40,10 @@ export const PORTFOLIOITEMS: portfolioItem[] = [
     name: 'BVSD Assistive Equipment',
     date: 'Spring 2015',
     description: 'description',
+    skills: [],
     codeLink: '',
     demoLink: '',
-    moreInfo: '',
+    moreInfo: 'https://sites.google.com/a/colorado.edu/rapidfire15/',
     imagePath: 'https://images.unsplash.com/photo-1497939902741-848a16f92f9e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=13fd261f792f0093ab005a71ba0d7576&auto=format&fit=crop&w=2089&q=80'
   }
   ,
@@ -47,6 +52,7 @@ export const PORTFOLIOITEMS: portfolioItem[] = [
     name: 'Mexico City Medical Clinic',
     date: 'Spring 2014',
     description: 'description',
+    skills: [],
     codeLink: '',
     demoLink: '',
     moreInfo: '',

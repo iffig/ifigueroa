@@ -8,27 +8,28 @@ import { portfolioItem } from '../portfolio-item';
 })
 export class PortfolioItemComponent implements OnInit {
   @Input() item: portfolioItem;
-  show = false;
+
+  detail = false;
+  skill = false;
+  main = true;
   constructor() { }
 
   ngOnInit() {
   }
-  hideDetails():void{
-    this.show = false;
-  }
 
-  showDetails():void{
-    this.show = true;
-  }
-
-  toggleDetail():void{
-    if(this.show == false){
-      this.show = true;
+  toggleView(view):void{
+    if(view == 'skill'){
+      this.skill = !this.skill;
+      if(!this.skill){
+        this.detail = true;
+      }
     }
-    else if(this.show == true){
-      this.show = false;
+    else if (view == 'detail'){
+      this.detail = !this.detail;
+      this.main = !this.main;
+      if(this.skill){
+        this.main = false;
+      }
     }
-
   }
-
 }

@@ -3,6 +3,7 @@ export class portfolioItem {
   name: string;
   date: string;
   description: string;
+  skills: string[];
   codeLink: string;
   demoLink: string;
   moreInfo: string;

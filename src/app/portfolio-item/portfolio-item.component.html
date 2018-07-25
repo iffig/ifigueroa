@@ -1,14 +1,14 @@
-<div class="card" (click)="toggleDetail()" >
+<div class="card">
   <img class="card-img" [src]="item.imagePath" alt="Card image">
 
-  <div class="card-img-overlay" [hidden]=show>
+  <!-- Main Card  -->
+  <div class="card-img-overlay" (click)="toggleView('detail')" [hidden]=!main>
     <div id='center-content'>
       <h2 class="card-text">{{item.name}}</h2>
-
     </div>
   </div>
-
-  <div class="card-img-overlay detail-overlay" [hidden]=!show >
+  <!-- Detail Overlay  -->
+  <div class="card-img-overlay detail-overlay" (click)="toggleView('detail')" [hidden]=!detail>
     <div id='center-content'>
       <h6 class="card-text">{{item.date}}</h6>
       <p class="card-text">{{item.description}}</p>
@@ -21,6 +21,17 @@
       <button *ngIf=item.moreInfo.length type="button" class="btn btn-sm">
         <a href={{item.moreInfo}}>More Info</a>
       </button>
+      <button *ngIf=item.skills.length type="button" class="btn btn-sm" (click)="toggleView('skill')">
+        <a>Skills/Tech</a>
+      </button>
     </div>
   </div>
+  <!-- Skill Overlay  -->
+  <div class="card-img-overlay detail-overlay"[hidden]=!skill>
+    <i  (click)="toggleView('skill')"  class="fa fa-times-circle main-txt-black"></i>
+    Skills + Tech
+    <br>
+    <span *ngFor='let skill of item.skills'class="badge badge-pill badge-custom">{{skill}}</span>
+  </div>
+
 </div>

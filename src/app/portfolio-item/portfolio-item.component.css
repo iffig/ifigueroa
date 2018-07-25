@@ -4,8 +4,8 @@
   margin: 1em;
 }
 .card-img-overlay{
-  width: 18em;
-  height: 18em;
+  width: 100%;
+  height: 100%;
   word-wrap: break-word;
 }
 .detail-overlay{
@@ -25,4 +25,9 @@ a{
 }
 a:hover{
   color: #f4f4f4;
+}
+
+.badge-custom{
+  background-color: #E88873;
+  margin: 0.5em;
 }
