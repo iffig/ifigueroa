@@ -16,7 +16,6 @@ export class PortfolioItemComponent implements OnInit {
 
   ngOnInit() {
   }
-
   toggleView(view):void{
     if(view == 'skill'){
       this.skill = !this.skill;

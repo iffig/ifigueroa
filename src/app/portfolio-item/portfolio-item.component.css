@@ -30,4 +30,9 @@ a:hover{
 .badge-custom{
   background-color: #E88873;
   margin: 0.5em;
+  padding: 0.5em;
+}
+
+#center-content{
+
 }
