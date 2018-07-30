@@ -8,27 +8,21 @@ import { portfolioItem } from '../portfolio-item';
 })
 export class PortfolioItemComponent implements OnInit {
   @Input() item: portfolioItem;
-  show = false;
+
+  detail = false;
+  skill = false;
+  main = true;
   constructor() { }
 
   ngOnInit() {
   }
-  hideDetails():void{
-    this.show = false;
-  }
-
-  showDetails():void{
-    this.show = true;
-  }
 
   toggleDetail():void{
-    if(this.show == false){
-      this.show = true;
-    }
-    else if(this.show == true){
-      this.show = false;
-    }
-
+    this.detail = !this.detail;
+    this.main = !this.main;
   }
-
+  toggleSkill():void{
+    this.detail = !this.detail;
+    this.skill = !this.skill;
+  }
 }
