@@ -1,37 +1,46 @@
 <div class="card">
   <img class="card-img" [src]="item.imagePath" alt="Card image">
-
-  <!-- Main Card  -->
-  <div class="card-img-overlay" (click)="toggleView('detail')" [hidden]=!main>
-    <div id='center-content'>
-      <h2 class="card-text">{{item.name}}</h2>
+  <!-- Card Face -->
+  <div *ngIf=main class="card-img-overlay" (click)="toggleDetail()">
+    <h2 class="card-text">{{item.name}}</h2>
+    <div id="date">
+      <h6 class="card-text">{{item.date}}</h6>
     </div>
   </div>
 
   <!-- Detail Overlay  -->
-  <div class="card-img-overlay detail-overlay" (click)="toggleView('detail')" [hidden]=!detail>
-    <h6 class="card-text">{{item.date}}</h6>
-    <p class="card-text">{{item.description}}</p>
-    <button *ngIf=item.codeLink.length type="button" class="btn btn-sm">
-      <a href={{item.codeLink}}>Code</a>
-    </button>
-    <button *ngIf=item.demoLink.length type="button" class="btn btn-sm">
-      <a href={{item.demoLink}}>Demo</a>
-    </button>
-    <button *ngIf=item.moreInfo.length type="button" class="btn btn-sm">
-      <a href={{item.moreInfo}}>More Info</a>
-    </button>
-    <button *ngIf=item.skills.length type="button" class="btn btn-sm" (click)="toggleView('skill')">
-      <a>Skills/Tech</a>
-    </button>
-  </div>
+  <div *ngIf=!main class="card-img-overlay ">
 
-  <!-- Skill Overlay  -->
-  <div class="card-img-overlay detail-overlay"[hidden]=!skill>
-    <i  (click)="toggleView('skill')"  class="fa fa-times-circle main-txt-black"></i>
-    Skills + Tech
-    <br>
-    <h5><span *ngFor='let skill of item.skills'class="badge badge-pill badge-custom">{{skill}}</span></h5>
-  </div>
 
+
+    <div class='card-img-overlay detail-overlay' >
+      <!-- Links to Project Info  -->
+      <button *ngIf=item.codeLink.length type="button" class="btn btn-sm">
+        <a href={{item.codeLink}}>Code</a>
+      </button>
+      <button *ngIf=item.demoLink.length type="button" class="btn btn-sm">
+        <a href={{item.demoLink}}>Demo</a>
+      </button>
+      <button *ngIf=item.moreInfo.length type="button" class="btn btn-sm">
+        <a href={{item.moreInfo}}>More Info</a>
+      </button>
+
+      <!-- description  -->
+      <div class='container' *ngIf=detail (click)=toggleDetail()>
+        {{item.description}}
+      </div>
+      <!-- Skills  -->
+      <div class='container' *ngIf=!detail>
+        Skills Learned
+        <p><span *ngFor='let skill of item.skills'class="badge badge-pill badge-custom">{{skill}}</span></p>
+      </div>
+    </div>
+
+    <!-- Skill show/hide button  -->
+    <div id='skillButton' *ngIf=item.skills.length>
+      <i *ngIf=detail (click)="toggleSkill()"  class="fa fa-chevron-circle-up main-txt-black"></i>
+      <i *ngIf=!detail (click)="toggleSkill()"  class="fa fa-chevron-circle-down main-txt-black"></i>
+    </div>
+
+  </div>
 </div>

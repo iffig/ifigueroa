@@ -16,19 +16,13 @@ export class PortfolioItemComponent implements OnInit {
 
   ngOnInit() {
   }
-  toggleView(view):void{
-    if(view == 'skill'){
-      this.skill = !this.skill;
-      if(!this.skill){
-        this.detail = true;
-      }
-    }
-    else if (view == 'detail'){
-      this.detail = !this.detail;
-      this.main = !this.main;
-      if(this.skill){
-        this.main = false;
-      }
-    }
+
+  toggleDetail():void{
+    this.detail = !this.detail;
+    this.main = !this.main;
+  }
+  toggleSkill():void{
+    this.detail = !this.detail;
+    this.skill = !this.skill;
   }
 }

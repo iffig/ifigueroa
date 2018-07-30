@@ -1,3 +1,7 @@
+.container{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 .card{
   width: 18em;
   height: 18em;
@@ -9,7 +13,8 @@
   word-wrap: break-word;
 }
 .detail-overlay{
-  background-color: rgba(250,201,184,0.5);
+  background-color: rgba(250,201,184,0.8);
+  overflow: auto;
 }
 
 .card-img {
@@ -17,8 +22,20 @@
   height: 100%;
 }
 
+#date{
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+#skillButton{
+  position: absolute;
+  right: 1em;
+  bottom:0.5em;
+}
+
 .card-text{
-  color: #f4f4f4
+  color: #f4f4f4;
 }
 a{
   color: #f4f4f4;
@@ -31,8 +48,4 @@ a:hover{
   background-color: #E88873;
   margin: 0.5em;
   padding: 0.5em;
-}
-
-#center-content{
-
 }
