@@ -4,7 +4,7 @@
   font-family: Avenir, Helvetica, sans-serif;
 }
 p {
-  font-family: Didot, Cambria,serif;
+  font-family: Avenir, Helvetica, serif;
 }
 
 div a {
@@ -13,7 +13,7 @@ div a {
 
 div a:hover{
   text-decoration: none;
-  color: #58BC82;
+  color: #16BAC5;
 }
 
 .btn{

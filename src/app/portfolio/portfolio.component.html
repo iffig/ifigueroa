@@ -1,7 +1,9 @@
-<h1 class='display-4'>Portfolio</h1>
-<hr>
-<div class="card-deck">
-  <div *ngFor='let item of items'>
-    <app-portfolio-item [item]="item"></app-portfolio-item >
+<div class="container">
+  <h1 class='display-4'>Projects</h1>
+  <hr>
+  <div class="card-deck">
+    <div *ngFor='let item of items'>
+      <app-portfolio-item [item]="item"></app-portfolio-item >
+    </div>
   </div>
 </div>
