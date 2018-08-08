@@ -13,8 +13,8 @@
   word-wrap: break-word;
 }
 .detail-overlay{
-  background-color: rgba(250,201,184,0.8);
-  overflow: auto;
+  background-color: rgba(250,201,184,0.7);
+  overflow: scroll;
 }
 
 .card-img {

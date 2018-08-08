@@ -5,7 +5,7 @@ export const PORTFOLIOITEMS: portfolioItem[] = [
     type: 'cs',
     name: 'Building Recognition - Senior Capstone',
     date: 'Fall 2017 - Spring 2018',
-    description: '',
+    description: 'For my senior capstone at university, I worked in a team of six in collaboration with out sponsor Trimble Inc. to develop an application to improve OpenStreetMap data. The application scans satellite images and using ML concepts and a convolutional neural network finds areas where building information is missing from the OSM database. As project manager and sponsor liaison, I spent time gathering requirements, developing documentation and UML diagrams, planning, and peer programming.',
     skills: ['Python', 'TensorFlow', 'Keras', 'AWS', 'iD editor'],
     codeLink: 'https://github.com/trimble-osm-capstone',
     demoLink: '',
