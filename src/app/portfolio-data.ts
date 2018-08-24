@@ -46,5 +46,17 @@ export const PORTFOLIOITEMS: portfolioItem[] = [
     demoLink: '',
     moreInfo: '',
     imagePath: 'https://images.unsplash.com/photo-1500313749317-0105e4b72ec1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e08e19c1a7256d7a76fe335839172849&auto=format&fit=crop&w=1267&q=80'
-  }
+  },
+  {
+    type: 'cs',
+    name: 'Planner App',
+    date: 'August 2018 - Present',
+    description: 'I have recently started working on this project mostly as a means to help me stay more organized and  to help me to learn React. While, right now this is a simple to do app, it will soon be a a full project planner and daily planner app. Stay tuned for updates to this project!',
+    skills: ['React', 'JavaScript', 'HTML', 'CSS', 'Heroku'],
+    codeLink: '',
+    demoLink: 'https://ifigueroa-planning.herokuapp.com',
+    moreInfo: '',
+    imagePath: 'https://images.unsplash.com/photo-1520004434532-668416a08753?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=371b60ea7853c87baf5217d34b2eab9f&auto=format&fit=crop&w=1950&q=80'
+
+  },
 ];
